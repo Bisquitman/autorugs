@@ -58,11 +58,12 @@ orderBtn.addEventListener('click', function () {
 });
 modalWindow.addEventListener('click', function (event) {
   if (event.target.classList.contains('overlay')) {
-    enableScroll();
     modalWindow.classList.remove('show_modal');
+    enableScroll();
   }
 });
 sendBtn.addEventListener('click', function (event) {
   event.preventDefault();
   modalWindow.classList.remove('show_modal');
+  enableScroll();
 }); // --- end of Модалка ---
